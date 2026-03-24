@@ -31,7 +31,10 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body {
-    background: linear-gradient(160deg, #000040 0%, #0A0A2F 40%, #0E1A50 70%, #000040 100%);
+    background-color: var(--pk-body-bg);
+    background-image: var(--ucl-star-bg);
+    background-size: cover; background-position: top center;
+    background-repeat: no-repeat; background-attachment: fixed;
     color: var(--pk-text-01); font-family: var(--pk-font);
     font-weight: 400; min-height: 100vh; font-size: 14px;
   }
@@ -187,6 +190,11 @@
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.18); border-radius: 3px; }
 
+  @media (max-width: 768px) {
+    body {
+      background: linear-gradient(160deg, #000040 0%, #0A0A2F 40%, #0E1A50 70%, #000040 100%);
+    }
+  }
   @media (max-width: 580px) {
     .timeline { padding-left: 34px; }
     .timeline::before { left: 11px; }
