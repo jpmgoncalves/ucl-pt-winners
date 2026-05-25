@@ -219,16 +219,16 @@
   <p class="hero-desc">Every Portuguese player to win the UEFA Champions League — from the golden era of Benfica to PSG's 2025 triumph.</p>
   <div class="hero-stats">
     <div class="stat-card"><span class="stat-num">49</span><span class="stat-label">Unique players</span></div>
-    <div class="stat-card"><span class="stat-num">17</span><span class="stat-label">Winning seasons</span></div>
+    <div class="stat-card"><span class="stat-num">18</span><span class="stat-label">Winning seasons</span></div>
     <div class="stat-card"><span class="stat-num">11</span><span class="stat-label">Different clubs</span></div>
     <div class="stat-card">
-      <span class="stat-num">4</span>
+      <span class="stat-num">5</span>
       <span class="stat-sublabel">Cristiano Ronaldo</span>
       <span class="stat-label">Most wins</span>
     </div>
     <div class="stat-card">
-      <span class="stat-num">2×</span>
-      <span class="stat-sublabel">Cristiano Ronaldo, Paulo Sousa</span>
+      <span class="stat-num">3×</span>
+      <span class="stat-sublabel">Cristiano Ronaldo</span>
       <span class="stat-label">Consecutive wins</span>
     </div>
   </div>
@@ -288,20 +288,28 @@ const seasons = [
   {
     season: "2017/18", milestone: true,
     clubs: [{ key: "realmadrid", name: "Real Madrid" }],
-    players: [{ name: "Cristiano Ronaldo", stars: 4 }],
+    players: [{ name: "Cristiano Ronaldo", stars: 5 }],
     venue: "Kyiv, Ukraine", final: "Real Madrid 3–1 Liverpool"
   },
   {
     season: "2016/17", milestone: true,
     clubs: [{ key: "realmadrid", name: "Real Madrid" }],
-    players: [{ name: "Cristiano Ronaldo", stars: 4 }],
+    players: [{ name: "Cristiano Ronaldo", stars: 5 }],
     venue: "Cardiff, Wales", final: "Real Madrid 4–1 Juventus"
+  },
+  {
+    season: "2015/16", milestone: true,
+    clubs: [{ key: "realmadrid", name: "Real Madrid" }],
+    players: [
+      { name: "Cristiano Ronaldo", stars: 5 }, { name: "Pepe", stars: 2 }
+    ],
+    venue: "Milan, Italy", final: "Real Madrid 1–1 Atlético (5–3 pens)"
   },
   {
     season: "2013/14", milestone: true,
     clubs: [{ key: "realmadrid", name: "Real Madrid" }],
     players: [
-      { name: "Cristiano Ronaldo", stars: 4 }, { name: "Fábio Coentrão" }, { name: "Pepe" }
+      { name: "Cristiano Ronaldo", stars: 5 }, { name: "Fábio Coentrão" }, { name: "Pepe", stars: 2 }
     ],
     venue: "Lisbon 🏠, Portugal", final: "Real Madrid 4–1 Atlético (aet)"
   },
@@ -316,7 +324,7 @@ const seasons = [
   {
     season: "2007/08", milestone: true,
     clubs: [{ key: "manchesterunited", name: "Manchester United" }],
-    players: [{ name: "Cristiano Ronaldo", stars: 4 }],
+    players: [{ name: "Cristiano Ronaldo", stars: 5 }],
     venue: "Moscow, Russia", final: "Man United 1–1 Chelsea (6–5 pens)"
   },
   {
