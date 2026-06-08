@@ -216,20 +216,28 @@
 <section class="hero">
   <div class="eyebrow">🇵🇹 &nbsp;Portugal &amp; European Football</div>
   <h1>Portuguese <span class="gold">Champions</span><br>of Europe</h1>
-  <p class="hero-desc">Every Portuguese player to win the UEFA Champions League — from the golden era of Benfica to PSG's 2025 triumph.</p>
+  <p class="hero-desc">Every Portuguese player to win the UEFA Champions League — from the golden era of Benfica to PSG's back-to-back triumphs.</p>
   <div class="hero-stats">
-    <div class="stat-card"><span class="stat-num">49</span><span class="stat-label">Unique players</span></div>
-    <div class="stat-card"><span class="stat-num">18</span><span class="stat-label">Winning seasons</span></div>
+    <div class="stat-card">
+      <span class="stat-num">49</span>
+      <span class="stat-label">Unique players</span>
+      <span class="stat-sublabel">won 71 times</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">19</span>
+      <span class="stat-label">Winning seasons</span>
+      <span class="stat-sublabel">out of 71</span>
+    </div>
     <div class="stat-card"><span class="stat-num">11</span><span class="stat-label">Different clubs</span></div>
     <div class="stat-card">
       <span class="stat-num">5</span>
-      <span class="stat-sublabel">Cristiano Ronaldo</span>
       <span class="stat-label">Most wins</span>
+      <span class="stat-sublabel">Cristiano Ronaldo</span>
     </div>
     <div class="stat-card">
       <span class="stat-num">3×</span>
+      <span class="stat-label">Most consecutive wins</span>
       <span class="stat-sublabel">Cristiano Ronaldo</span>
-      <span class="stat-label">Consecutive wins</span>
     </div>
   </div>
 </section>
@@ -271,11 +279,20 @@ const BADGES = {
 
 const seasons = [
   {
+    season: "2025/26", milestone: true,
+    clubs: [{ key: "psg", name: "Paris Saint-Germain" }],
+    players: [
+      { name: "Gonçalo Ramos", stars: 2 }, { name: "João Neves", stars: 2 },
+      { name: "Nuno Mendes", stars: 2 },   { name: "Vitinha", stars: 2 }
+    ],
+    venue: "Budapest, Hungary", final: "PSG 1–1 Arsenal (4–3 pens)"
+  },
+  {
     season: "2024/25", milestone: true,
     clubs: [{ key: "psg", name: "Paris Saint-Germain" }],
     players: [
-      { name: "Gonçalo Ramos" }, { name: "João Neves" },
-      { name: "Nuno Mendes" },   { name: "Vitinha" }
+      { name: "Gonçalo Ramos", stars: 2 }, { name: "João Neves", stars: 2 },
+      { name: "Nuno Mendes", stars: 2 },   { name: "Vitinha", stars: 2 }
     ],
     venue: "Munich, Germany", final: "PSG 1–0 Inter Milan"
   },
